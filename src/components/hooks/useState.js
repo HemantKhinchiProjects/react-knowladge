@@ -14,7 +14,7 @@
 2. dusara function hota hai jiski help se hum number 1 var ki value update/change kar sakte hai.
 */
 // Note: aksar hum state ko value update karne ke liye onclick ka use karte hai. but esa jaruri nahi hai ki hum ise click event pe hi update karye. bina click ke bhi hum ye kar sakte hai.humare pass koi bhi karan ho hum update kar sakte hai. for example HTTP Request update.
-//Example:
+//Example (Way One):
 import React, { useState } from 'react';
 
 function ExpenseItem(props) {
@@ -35,3 +35,24 @@ function ExpenseItem(props) {
   );
 }
 //state can be update in many way
+//hum bahot sare state banane ke bajay singal state bhi bana sakte hai. uske liye hume object banana padega.
+
+//Example ()Way 2:
+
+//const [enterdTitle, SetenterdTitle] = useState('');
+//const [enterdAmount, SetenterdAmount] = useState('');
+//const [enterdDate, SetenterdDate] = useState('');
+const [UserInput, setUserInput] = useState({
+  enterdTitle: '',
+  enterdAmount: '',
+  enterdDate: '',
+});
+const titleChangeHandler = (event) => {
+  setUserInput(...UserInput, event.target.value);
+};
+const amountChangeHandler = (event) => {
+  setUserInput(...UserInput, event.target.value);
+};
+const dateChangeHandler = (event) => {
+  setUserInput(...UserInput, event.target.value);
+};
