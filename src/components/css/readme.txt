@@ -1,6 +1,11 @@
 External css
 //normaly jab bhi hum koi new component banate hai to us component ki style file sath mai banate hai. folder ki css hum niche bataye example ki tarha eccess kar sakte hai.
 
+/*class name namming convenstion*/
+Right                       Wrong
+blink_me                    blink-me
+
+
 External Example 1:
 import './ExpenseDate.css';
 
