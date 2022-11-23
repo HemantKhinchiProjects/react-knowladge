@@ -48,11 +48,11 @@ const [UserInput, setUserInput] = useState({
   enterdDate: '',
 });
 const titleChangeHandler = (event) => {
-  setUserInput(...UserInput, event.target.value);
+  setUserInput((previousState)=>{return {...previousState, event.target.value}});
 };
 const amountChangeHandler = (event) => {
-  setUserInput(...UserInput, event.target.value);
+  setUserInput((previousState)=>{return {...previousState, event.target.value}});
 };
 const dateChangeHandler = (event) => {
-  setUserInput(...UserInput, event.target.value);
+  setUserInput((previousState)=>{return {...previousState, event.target.value}});
 };
