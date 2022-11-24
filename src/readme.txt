@@ -1,6 +1,5 @@
-What is props?
-Props function “Argument” ki tarha kaam karta hai. Props ko HTML mai Attribute ki tarha pass kiya jata hai. Or kisi dusre component mai access kiya jata hai. Ye deta ek component se dusare component main bhejne ke liye use hota hai. Props ko hum property bhi bol sakte hai.
-stap 1: jese Expenses component mai data bheja ja raha hai jiska name “Items” diya gaya hai.
+Note:
+1. React main jab bhi hume dynamic value likhani hoti hai to "{}" ka use karte hai.
 
 export default function App() {
   const expenses = [
