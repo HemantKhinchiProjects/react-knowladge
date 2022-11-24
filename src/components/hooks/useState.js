@@ -1,5 +1,17 @@
 // Humara component ek tarha se ek function hi hai. bus iski importent this ye hai ki ye hume JSX provide karta hai.to function hone kiwajha se React ise call  karta hai. but hum ise call nahi karte. bus hum ise HTML ki tarha use karte hai. par undar se ye function ki tarha hi hai. to jab hume ki or function ko call karte hai. to wo hume react ko batana hota hai. isliye jub bhi hume DOM (Document object module ) ko change or update karna hota hai. to hooks ki jarurat hoti hai. react mai bina hooks ke hum DOM change & update nahi kar sakte. ye sabhi index.js file se start hota hai.
 
+/*Two way binding?*/
+// useState mai hum na kewal input lete hai bulki use update karke wapas bhi karte hai ye hi two-way binding kahalata hai. jesa ki form input 'value' mai humne kiya hai
+Example:
+
+const [enterdTitle, SetenterdTitle] = useState('');
+
+const amountChangeHandler = (event) => {
+  SetenterdTitle(event.target.value);
+};
+
+<input type="number"onChange={amountChangeHandler} value={enterdTitle}/>
+
 /*React hooks impotent rules:-
 
 1. that you must only call react hooks in react functions.
