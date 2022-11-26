@@ -2,7 +2,7 @@
 //This is supper importent pattren to communicate between components. jis tarha se react main hum data props ki help se parent to child bhejate hai. usi ko reverse use karke hum apna deta child to parent bhi bhej sakte hai. par iske liye hum bhich mai jitane bhi component honge unko skeep nahi kar sakte. un sabhi component ko use karke hi hum deta lift kar sakte hai. props mai kewal component to component hi deta bhej sakte hai. kisi bhi component ko skeep nahi kar sakte.
 //Example:
 /*----------componet B se data ko component a mai bhej rahe hai.
-/*----------componet A se data ko component a mai Access kar rahe hai rahe hai.
+/*----------componet B se data ko component a mai Access kar rahe hai rahe hai.
 //-----------------------------Component A (First Stap)----------------------------------*/
 
 import React from 'react';
