@@ -3,7 +3,7 @@
 //Example:
 /*----------componet B se data ko component a mai bhej rahe hai.
 /*----------componet A se data ko component a mai Access kar rahe hai rahe hai.
-//-----------------------------Component A----------------------------------*/
+//-----------------------------Component A (First Stap)----------------------------------*/
 
 import React from 'react';
 import './NewExpense.css';
@@ -18,13 +18,13 @@ const NewExpense = () => {
   };
   return (
     <div className="new-expense">
-      <ExpenseForm onSaveExpenseData={SaveExpenseDataHandler} />
+      <ExpenseForm onSaveExpenseData={SaveExpenseDataHandler} /> /*------ */
     </div>
   );
 };
 export default NewExpense;
 
-//------------------------Component B-----------------------------------*/
+//------------------------Component B (Second Stap)-----------------------------------*/
 
 import React, { useState } from 'react';
 const ExpenseForm = (props) => {
