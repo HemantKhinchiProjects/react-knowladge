@@ -9,7 +9,17 @@ const Expenses = (props) => {
   return (
     <div>
         {} //Condistion code will come here between curly-Brackets 
-        
+        /*-------------------//simple condistion--------------*/
+        {filteredExpenses.length === 0 && <p>No expenses Found </p>}
+        { filteredExpenses.length >= 0 && filteredExpenses.map((expense) => (
+            <ExpenseItem
+              key={expense.id}
+              title={expense.title}
+              amount={expense.amount}
+              date={expense.date}
+            />
+          ))}
+        /*----------------//ternary operator Condistion------------*/
         {filteredExpenses.length === 0 ? (
           <p>No expenses Found </p>
         ) : (
@@ -21,7 +31,7 @@ const Expenses = (props) => {
               date={expense.date}
             />
           ))
-        )}//ternary operator Condistion
+        )}
     </div>
   );
 };
