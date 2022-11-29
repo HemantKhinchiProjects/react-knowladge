@@ -1,0 +1,4 @@
+React mai Hooks V- 16.8 ke sath add huye. hooks ki help se asani se stateful Reusable  logic create kiya jata hai. jise hum kisi bhi component mai access kar sakte hai.
+
+Note=> Hooks main hamesha 'use' keyword ka use starting mai kiya jata hai. custom hooks main bhi. 
+Additionally, we can create our own custom hooks that give our app custom functionality.

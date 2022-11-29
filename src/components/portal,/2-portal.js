@@ -1,4 +1,9 @@
-react portal bhi react fragment ki tarha hi hai ye bhi hume cleaner code likhane main help karta hai. mostely iska use overlay component ko present karne ke liye hota hai. like: modal, toggle, alert, toster, notification etc.
+react portal bhi react fragment ki tarha hi hai ye bhi hume cleaner code likhane main help karta hai. mostely iska use overlay component ko present karne ke liye hota hai. like: modal, toggle, alert, toster, notification etc. 
+
+portal ko 2 chijo ki jarurat hoti hai.
+1.jagha jnha aap  component ko port karana chahate hai.
+2. aap ko component ko iske bare main batana hoga.
+
 // fragment syntax
 function MyComponent() {
   return (
