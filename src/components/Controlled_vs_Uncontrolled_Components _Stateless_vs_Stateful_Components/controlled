@@ -1,1 +1,2 @@
 /*in the react all component manage some state. un sabhi component ko state-full component bola jata hai. or jis component ke pass apna state nahi hota use dump component ya fir uncontroled component or state-less component bhi bol sakte hai. ye sirf deta presntestion ke liye hote hai. most of react application have state less component*/
+
