@@ -34,3 +34,5 @@ export default function App() {
 Inline css
 style={{"left":"71.2%"}}
 
+# In the above example, style={{}} is not a special syntax, but a regular {} object inside the style={ } JSX curly braces. You can use the style attribute when your styles depend on JavaScript variables.#
+

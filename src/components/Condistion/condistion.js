@@ -51,3 +51,9 @@ const Expenses = (props) => {
   );
 };
 export default Expenses;
+
+## && use 
+When you don’t need the else branch, you can also use a shorter logical && syntax:
+<div>
+  {isLoggedIn && <AdminPanel />}
+</div>

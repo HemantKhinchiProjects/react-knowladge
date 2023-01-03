@@ -59,4 +59,11 @@ function Expenses(props) {
   );
 }
 
-Example 2:
+Example 2: like a Object
+function MyButton({ count, onClick }) {
+  return (
+    <button onClick={onClick}>
+      Clicked {count} times
+    </button>
+  );
+}
