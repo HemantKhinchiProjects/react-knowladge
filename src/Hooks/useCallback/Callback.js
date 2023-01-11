@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import Child from './child/Child';
 const UMemo = () => {
   const [value, setValue] = useState(0);
   const [valueTwo, setValueTwo] = useState(0);
@@ -24,6 +25,8 @@ const UMemo = () => {
   }, [value]);
   return (
     <div>
+      <h4>Use Callback</h4>
+      <Child />
       <p>This is {isEven ? 'Even Number' : 'Odd Number'}</p>
       <button
         type="button"
