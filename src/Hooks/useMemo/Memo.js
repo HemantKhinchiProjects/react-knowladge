@@ -23,7 +23,7 @@ const UMemo = () => {
     return value % 2 === 0;
   }, [value]);
   return (
-    <div>
+    <div className="my-4">
       <p>This is {isEven ? 'Even Number' : 'Odd Number'}</p>
       <button
         type="button"

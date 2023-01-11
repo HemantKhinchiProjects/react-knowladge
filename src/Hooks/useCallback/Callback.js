@@ -1,22 +1,19 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useCallback } from 'react';
 import Child from './child/Child';
 const UMemo = () => {
   const [value, setValue] = useState(0);
-
+  const [valueOne, setValueOne] = useState([]);
   const handlerUpdate = () => {
     console.log('01');
     setValue(value + 1);
   };
-
-  const isEven = useMemo(() => {
-    let i = 0;
-    while (i < 200000000) i++;
-    return value % 2 === 0;
-  }, [value]);
+  const fun = useCallback(() => {
+    console.log('asdkfjhakd');
+  }, valueOne);
   return (
     <div>
-      <Child />
-      <p>This is {isEven ? 'Even Number' : 'Odd Number'}</p>
+      <Child valueOne={valueOne} fun={fun} />
+
       <button
         type="button"
         className="btn btn-outline-primary"
