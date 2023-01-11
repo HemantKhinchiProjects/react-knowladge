@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{} from 'react';
 const UMemo = () => {
   return <div>Use memo</div>;
 };
