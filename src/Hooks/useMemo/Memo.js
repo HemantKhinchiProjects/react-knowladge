@@ -1,5 +1,5 @@
 import React from 'react';
-const Memo = () => {
+const UMemo = () => {
   return <div>Use memo</div>;
 };
-export default Memo;
+export default UMemo;
