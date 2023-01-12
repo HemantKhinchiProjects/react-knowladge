@@ -7,8 +7,16 @@ import Ref from './Hooks/useRef/Ref.js';
 const App = () => {
   return (
     <div className="container">
-      <h1>Hello Hemant!</h1>
-      <p>Start Example of Hooks :)</p>
+      <h1>React Hooks</h1>
+      <p>
+        Hooks were added to React in version 16.8. Hooks allow function
+        components to have access to state and other React features. Because of
+        this, class components are generally no longer needed. :)
+      </p>
+      <p className="alert alert-warning">
+        Although Hooks generally replace class components, there are no plans to
+        remove classes from React.
+      </p>
       <div className="alert alert-primary" role="alert">
         Summary: useCallback is used to memoize callback functions, so that the
         same function is passed down to child components, avoiding unnecessary
