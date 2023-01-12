@@ -3,12 +3,13 @@ import './style.css';
 /*Hooks Example*/
 import UMemo from './Hooks/useMemo/Memo.js';
 import Callback from './Hooks/useCallback/Callback.js';
+import Ref from './Hooks/useRef/Ref.js';
 const App = () => {
   return (
     <div className="container">
       <h1>Hello Hemant!</h1>
       <p>Start Example of Hooks :)</p>
-      <div class="alert alert-primary" role="alert">
+      <div className="alert alert-primary" role="alert">
         Summary: useCallback is used to memoize callback functions, so that the
         same function is passed down to child components, avoiding unnecessary
         re-renders. useMemo is used to memoize the computation of expensive
@@ -37,6 +38,11 @@ const App = () => {
         </p>
       </div>
       <Callback />
+      <div className="alert alert-success" role="alert">
+        <h4 className="alert-heading">useRef Hooks!</h4>
+        <p>...</p>
+      </div>
+      <Ref />
     </div>
   );
 };
