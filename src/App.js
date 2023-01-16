@@ -73,12 +73,19 @@ const App = () => {
       </div>
       <State />
       <div className="alert alert-success my-4" role="alert">
-        <h4 className="alert-heading">useEffect Hooks!</h4>
+        <h4 className="alert-heading">useEffect Hooks! most widly used</h4>
         <p>
-          useState is a Hook that allows you to have state variables in
-          functional components. You pass the initial state to this function and
-          it returns a variable with the current state value (not necessarily
-          the initial state) and another function to update this value.
+          To impliment life cycle method in function component. we have hook
+          useEffect. useEffect return a function. The useEffect Hook allows you
+          to perform side effects in your components. Some examples of side
+          effects are: fetching data, directly updating the DOM, and timers.
+          useEffect accepts two arguments. The second argument is optional.
+          <br />
+          <small className="text-info-emphasis">
+            SideEffect are basically anything that affect outside of the scope.
+            of the current function thats being executed. In our dashboard this
+            include
+          </small>
         </p>
       </div>
       <Effect />
