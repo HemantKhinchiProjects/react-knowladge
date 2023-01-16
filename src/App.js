@@ -5,6 +5,7 @@ import UMemo from './Hooks/useMemo/Memo.js';
 import Callback from './Hooks/useCallback/Callback.js';
 import Ref from './Hooks/useRef/Ref.js';
 import Reducer from './Hooks/useReducer/Reducer.js';
+import State from './Hooks/useState/State.js';
 const App = () => {
   return (
     <div className="container">
@@ -60,6 +61,14 @@ const App = () => {
         </p>
       </div>
       <Reducer />
+      <div className="alert alert-success" role="alert">
+        <h4 className="alert-heading">useState Hooks!</h4>
+        <p>
+          when we work with multipal state, we need to use UseReduce instad of
+          useState. in that condistion we use useReducer.
+        </p>
+      </div>
+      <State />
     </div>
   );
 };
