@@ -4,6 +4,7 @@ import './style.css';
 import UMemo from './Hooks/useMemo/Memo.js';
 import Callback from './Hooks/useCallback/Callback.js';
 import Ref from './Hooks/useRef/Ref.js';
+import Reducer from './Hooks/useReducer/Reducer.js';
 const App = () => {
   return (
     <div className="container">
@@ -51,6 +52,10 @@ const App = () => {
         <p>...</p>
       </div>
       <Ref />
+      <div className="alert alert-success" role="alert">
+        <h4 className="alert-heading">useReducer Hooks!</h4>
+        <p>when need to use max state. in that condistion we use useReducer.</p>
+      </div>
     </div>
   );
 };
