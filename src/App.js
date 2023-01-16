@@ -61,7 +61,7 @@ const App = () => {
         </p>
       </div>
       <Reducer />
-      <div className="alert alert-success" role="alert">
+      <div className="alert alert-success my-4" role="alert">
         <h4 className="alert-heading">useState Hooks!</h4>
         <p>
           when we work with multipal state, we need to use UseReduce instad of
