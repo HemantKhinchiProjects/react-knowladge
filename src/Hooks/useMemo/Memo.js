@@ -25,20 +25,22 @@ const UMemo = () => {
   return (
     <div className="my-4">
       <p>This is {isEven ? 'Even Number' : 'Odd Number'}</p>
-      <button
-        type="button"
-        className="btn btn-outline-primary"
-        onClick={handlerUpdate}
-      >
-        increase {value}
-      </button>
-      <button
-        type="button"
-        className="btn btn-outline-danger"
-        onClick={handlerUpdateTwo}
-      >
-        Dicrease {valueTwo}
-      </button>
+      <div className="btn-group" role="group" aria-label="Basic example">
+        <button
+          type="button"
+          className="btn btn-outline-primary"
+          onClick={handlerUpdate}
+        >
+          increase {value}
+        </button>
+        <button
+          type="button"
+          className="btn btn-outline-danger"
+          onClick={handlerUpdateTwo}
+        >
+          Dicrease {valueTwo}
+        </button>
+      </div>
     </div>
   );
 };

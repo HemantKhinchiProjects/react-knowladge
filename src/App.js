@@ -6,6 +6,7 @@ import Callback from './Hooks/useCallback/Callback.js';
 import Ref from './Hooks/useRef/Ref.js';
 import Reducer from './Hooks/useReducer/Reducer.js';
 import State from './Hooks/useState/State.js';
+import Effect from './Hooks/useEffect/Effect.js';
 const App = () => {
   return (
     <div className="container">
@@ -71,6 +72,16 @@ const App = () => {
         </p>
       </div>
       <State />
+      <div className="alert alert-success my-4" role="alert">
+        <h4 className="alert-heading">useEffect Hooks!</h4>
+        <p>
+          useState is a Hook that allows you to have state variables in
+          functional components. You pass the initial state to this function and
+          it returns a variable with the current state value (not necessarily
+          the initial state) and another function to update this value.
+        </p>
+      </div>
+      <Effect />
     </div>
   );
 };
