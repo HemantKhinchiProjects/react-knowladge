@@ -79,7 +79,8 @@ const App = () => {
           useEffect. useEffect return a function. The useEffect Hook allows you
           to perform side effects in your components. Some examples of side
           effects are: fetching data, directly updating the DOM, and timers.
-          useEffect accepts two arguments. The second argument is optional.
+          useEffect accepts two arguments. The second argument is optional. it
+          will call automaticly.
           <br />
           <small className="text-info-emphasis">
             SideEffect are basically anything that affect outside of the scope.
