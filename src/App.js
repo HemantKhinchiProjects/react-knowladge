@@ -54,7 +54,10 @@ const App = () => {
       <Ref />
       <div className="alert alert-success" role="alert">
         <h4 className="alert-heading">useReducer Hooks!</h4>
-        <p>when need to use max state. in that condistion we use useReducer.</p>
+        <p>
+          when we work with multipal state, we need to use UseReduce instad of
+          useState. in that condistion we use useReducer.
+        </p>
       </div>
     </div>
   );
