@@ -64,8 +64,10 @@ const App = () => {
       <div className="alert alert-success my-4" role="alert">
         <h4 className="alert-heading">useState Hooks!</h4>
         <p>
-          when we work with multipal state, we need to use UseReduce instad of
-          useState. in that condistion we use useReducer.
+          useState is a Hook that allows you to have state variables in
+          functional components. You pass the initial state to this function and
+          it returns a variable with the current state value (not necessarily
+          the initial state) and another function to update this value.
         </p>
       </div>
       <State />
