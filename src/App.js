@@ -59,6 +59,7 @@ const App = () => {
           useState. in that condistion we use useReducer.
         </p>
       </div>
+      <Reducer />
     </div>
   );
 };
