@@ -15,7 +15,7 @@ const Reducer = () => {
     <>
       <div className="col-md-4 mx-auto text-center">
         <h5>
-          Example heading <span className="badge bg-secondary">{state}</span>
+          Example useReducer <span className="badge bg-secondary">{state}</span>
         </h5>
         <div className="btn-group" role="group" aria-label="Basic example">
           <button
