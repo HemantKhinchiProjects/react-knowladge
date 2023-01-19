@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import customHooks from './cHooks/useMyHooks'; // import custom hook
 const CustomHooks = () => {
   const [number, setNumber] = useState(0);
   const handlerAdd = () => {
     return setNumber(number + 1);
   };
-  useEffect(() => {
-    document.title = `Chats (${number})`;
-  });
+  customHooks(number); // this the custom hook
   return (
     <>
       <div className="col-md-4 mx-auto text-center">
@@ -19,7 +18,7 @@ const CustomHooks = () => {
             className="btn btn-primary"
             onClick={handlerAdd}
           >
-            Hit Me
+            Custom Hooks
           </button>
         </div>
       </div>
