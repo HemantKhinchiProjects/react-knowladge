@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import Child from './child/Child';
-const UMemo = () => {
+const Callback = () => {
   const [value, setValue] = useState(0);
   const [valueOne, setValueOne] = useState([]);
   const handlerUpdate = () => {
@@ -24,4 +24,4 @@ const UMemo = () => {
     </div>
   );
 };
-export default UMemo;
+export default Callback;
