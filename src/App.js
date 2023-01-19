@@ -7,6 +7,7 @@ import Ref from './Hooks/useRef/Ref.js';
 import Reducer from './Hooks/useReducer/Reducer.js';
 import State from './Hooks/useState/State.js';
 import Effect from './Hooks/useEffect/Effect.js';
+import CustomHooks from './Hooks/customHooks/custom.js';
 const App = () => {
   return (
     <div className="container">
@@ -90,6 +91,24 @@ const App = () => {
         </p>
       </div>
       <Effect />
+      <div className="alert alert-success my-4" role="alert">
+        <h4 className="alert-heading">Custom Hooks! most widly used</h4>
+        <p>
+          To impliment life cycle method in function component. we have hook
+          useEffect. useEffect return a function. The useEffect Hook allows you
+          to perform side effects in your components. Some examples of side
+          effects are: fetching data, directly updating the DOM, and timers.
+          useEffect accepts two arguments. The second argument is optional. it
+          will call automaticly.
+          <br />
+          <small className="text-info-emphasis">
+            SideEffect are basically anything that affect outside of the scope.
+            of the current function thats being executed. In our dashboard this
+            include
+          </small>
+        </p>
+      </div>
+      <CustomHooks />
     </div>
   );
 };
