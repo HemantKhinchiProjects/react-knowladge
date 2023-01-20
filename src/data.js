@@ -2,6 +2,8 @@ import React from 'react';
 import State from './Hooks/useState/State.js';
 import Ref from './Hooks/useRef/Ref.js';
 import Reducer from './Hooks/useReducer/Reducer.js';
+import CustomHooks from './Hooks/customHooks/custom.js';
+import Effect from './Hooks/useEffect/Effect.js';
 const people = [
   {
     id: 1,
@@ -45,6 +47,7 @@ const people = [
     detail:
       'Custom hooks are functions that allow you to reuse stateful logic and share it across components. They let you use React features, like state and context, without writing a class.. ',
     point: 'Custom Hooks! most widly used',
+    component: <CustomHooks />,
   },
   {
     id: 5,
@@ -55,6 +58,7 @@ const people = [
     detail:
       'To impliment life cycle method in function component. we have hook useEffect. useEffect return a function. The useEffect Hook allows you to perform side effects in your components. Some examples of side effects are: fetching data, directly updating the DOM, and timers. useEffect accepts two arguments. The second argument is optional. it will call automaticly.',
     point: 'useEffect Hooks! most widly used :-)',
+    component: <Effect />,
   },
   {
     id: 6,
