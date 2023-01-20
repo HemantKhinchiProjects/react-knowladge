@@ -22,11 +22,7 @@ const Hooks = () => {
         Although Hooks generally replace class components, there are no plans to
         remove classes from React.
       </p>
-      <hr></hr>
-      <i>
-        UseState <i class="fa-solid fa-anchor"></i> Example{' '}
-      </i>{' '}
-      <hr class="mb-0"></hr>
+
       <State />
       <Ref />
     </>

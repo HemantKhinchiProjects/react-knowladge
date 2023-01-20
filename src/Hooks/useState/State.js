@@ -9,14 +9,24 @@ const State = () => {
   };
   return (
     <>
-      <div className="highlight mb-0">
-        <h4 className="alert-heading">useState !</h4>
-        <p>
-          useState is a Hook that allows you to have state variables in
-          functional components. You pass the initial state to this function and
-          it returns a variable with the current state value (not necessarily
-          the initial state) and another function to update this value.
-        </p>
+      <div>
+        <hr></hr>
+
+        <h4 className="alert-heading">
+          <i>
+            UseState <i class="fa-solid fa-anchor"></i> Example
+          </i>
+        </h4>
+        <hr class="mb-0"></hr>
+        <div className="highlight mb-0">
+          <p>
+            useState is a Hook that allows you to have state variables in
+            functional components. You pass the initial state to this function
+            and it returns a variable with the current state value (not
+            necessarily the initial state) and another function to update this
+            value.
+          </p>
+        </div>
       </div>
       <div className="col-md-4 mx-auto text-center mt-2">
         <h5>

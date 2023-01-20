@@ -10,9 +10,29 @@ const Ref = () => {
   };
   return (
     <div>
-      <div className="alert alert-success" role="alert">
-        <h4 className="alert-heading">useRef Hooks!</h4>
-        <p>...</p>
+      <div>
+        <hr></hr>
+
+        <h4 className="alert-heading">
+          <i>
+            UseRef <i class="fa-solid fa-anchor"></i> Example
+          </i>
+        </h4>
+        <hr class="mb-0"></hr>
+        <div className="highlight mb-0">
+          <p>
+            If we tried to count how many times our application renders using
+            the useState Hook, we would be caught in an infinite loop since this
+            Hook itself causes a re-render. To avoid this, we can use the useRef
+            Hook.
+          </p>
+          <ul>
+            <li>
+              useRef() only returns one item. It returns an Object called
+              current.
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div className="my-2 alert alert-dark ">
