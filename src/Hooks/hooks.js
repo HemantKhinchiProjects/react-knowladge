@@ -11,7 +11,7 @@ import UMemo from './useMemo/Memo.js';
 const Hooks = () => {
   return (
     <>
-      <HooksTitle />
+      {/* <HooksTitle /> */}
       <div className="bd-callout bd-callout-info mb-0">
         <h4>
           React Hooks <i class="fa-solid fa-anchor"></i>
@@ -30,11 +30,11 @@ const Hooks = () => {
         remove classes from React.
       </p>
 
-      {/* <State /> 
+      <State />
       <Ref />
       <Reducer />
       <CustomHooks />
-      <Effect />*/}
+      <Effect />
       <div className="alert alert-warning mt-4" role="alert">
         Summary: useCallback is used to memoize callback functions, so that the
         same function is passed down to child components, avoiding unnecessary
