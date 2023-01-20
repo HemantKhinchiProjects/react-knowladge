@@ -5,9 +5,6 @@ import Hooks from './Hooks/hooks.js';
 import UMemo from './Hooks/useMemo/Memo.js';
 import Callback from './Hooks/useCallback/Callback.js';
 
-import Reducer from './Hooks/useReducer/Reducer.js';
-
-import Effect from './Hooks/useEffect/Effect.js';
 import CustomHooks from './Hooks/customHooks/custom.js';
 //High Order Function
 import HocSample from './components/HOC/hocSample.js';
@@ -49,35 +46,6 @@ const App = () => {
         </p>
       </div>
       <Callback />
-     
-      <div className="alert alert-success" role="alert">
-        <h4 className="alert-heading">useReducer Hooks!</h4>
-        <p>
-          when we work with multipal state, we need to use UseReduce instad of
-          useState. in that condistion we use useReducer.
-        </p>
-      </div>
-      <Reducer />
-      
-     
-      <div className="alert alert-success my-4" role="alert">
-        <h4 className="alert-heading">useEffect Hooks! most widly used</h4>
-        <p>
-          To impliment life cycle method in function component. we have hook
-          useEffect. useEffect return a function. The useEffect Hook allows you
-          to perform side effects in your components. Some examples of side
-          effects are: fetching data, directly updating the DOM, and timers.
-          useEffect accepts two arguments. The second argument is optional. it
-          will call automaticly.
-          <br />
-          <small className="text-info-emphasis">
-            SideEffect are basically anything that affect outside of the scope.
-            of the current function thats being executed. In our dashboard this
-            include
-          </small>
-        </p>
-      </div>
-      <Effect />
       <div className="alert alert-success my-4" role="alert">
         <h4 className="alert-heading">Custom Hooks! most widly used</h4>
         <p>

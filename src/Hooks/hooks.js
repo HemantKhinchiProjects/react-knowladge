@@ -2,6 +2,8 @@ import React from 'react';
 /*Hooks Example*/
 import State from './useState/State.js';
 import Ref from './useRef/Ref.js';
+import Reducer from './useReducer/Reducer.js';
+import Effect from './useEffect/Effect.js';
 const Hooks = () => {
   return (
     <>
@@ -25,6 +27,8 @@ const Hooks = () => {
 
       <State />
       <Ref />
+      <Reducer />
+      <Effect />
     </>
   );
 };

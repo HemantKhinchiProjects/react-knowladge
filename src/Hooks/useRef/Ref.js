@@ -9,7 +9,7 @@ const Ref = () => {
     yname == '' ? alert('Please Fill the data') : setShow(true);
   };
   return (
-    <div>
+    <>
       <div>
         <hr></hr>
 
@@ -54,7 +54,7 @@ const Ref = () => {
           {show ? `Your name is ${luckyName.current.value}` : show}{' '}
         </small>
       </div>
-    </div>
+    </>
   );
 };
 export default Ref;
