@@ -10,7 +10,7 @@ const Ref = () => {
   };
   return (
     <>
-      <div>
+      {/* <div>
         <hr></hr>
 
         <h4 className="alert-heading">
@@ -33,7 +33,7 @@ const Ref = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
 
       <div className="my-2 alert alert-dark ">
         <form className="col-4 mx-auto" onSubmit={handlerSubmit}>

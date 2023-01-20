@@ -1,4 +1,5 @@
 import React from 'react';
+import HooksTitle from '../components/hooks/hooksTitle.js';
 /*Hooks Example*/
 import State from './useState/State.js';
 import Ref from './useRef/Ref.js';
@@ -10,6 +11,7 @@ import UMemo from './useMemo/Memo.js';
 const Hooks = () => {
   return (
     <>
+      <HooksTitle />
       <div className="bd-callout bd-callout-info mb-0">
         <h4>
           React Hooks <i class="fa-solid fa-anchor"></i>

@@ -10,7 +10,6 @@ const CustomHooks = () => {
     <>
     <div>
         <hr></hr>
-
         <h4 className="alert-heading">
           <i>
             UseCustom <i class="fa-solid fa-anchor"></i> Example

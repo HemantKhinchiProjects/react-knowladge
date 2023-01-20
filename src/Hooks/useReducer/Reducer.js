@@ -13,7 +13,7 @@ const Reducer = () => {
   const [state, dispatch] = useReducer(reducer, initionalState);
   return (
     <>
-      <div>
+      {/* <div>
         <hr></hr>
 
         <h4 className="alert-heading">
@@ -35,7 +35,7 @@ const Reducer = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
       <div className="col-md-4 mx-auto text-center">
         <h5>
           <span className="badge bg-secondary">{state}</span>

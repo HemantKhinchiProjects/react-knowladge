@@ -9,7 +9,7 @@ const State = () => {
   };
   return (
     <>
-      <div>
+      {/* <div>
         <hr></hr>
 
         <h4 className="alert-heading">
@@ -27,7 +27,7 @@ const State = () => {
             value.
           </p>
         </div>
-      </div>
+      </div> */}
       <div className="col-md-4 mx-auto text-center mt-2">
         <h5>
           Example UseState <span className="badge bg-secondary">{number}</span>
