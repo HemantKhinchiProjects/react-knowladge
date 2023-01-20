@@ -3,8 +3,8 @@ const Child = ({ valueOne, setValueOne }) => {
   console.log('child component');
   return (
     <>
-      <div className="alert alert-warning" role="alert">
-        A simple Child alert—check it out!
+      <div className="alert alert-dark " role="alert">
+        A simple Child Component for check!
       </div>
     </>
   );

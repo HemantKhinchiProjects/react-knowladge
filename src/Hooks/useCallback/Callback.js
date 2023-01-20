@@ -12,6 +12,27 @@ const Callback = () => {
   }, valueOne);
   return (
     <div>
+      <div>
+        <hr></hr>
+
+        <h4 className="alert-heading">
+          <i>
+            UseCallback <i class="fa-solid fa-anchor"></i> Example
+          </i>
+        </h4>
+        <hr class="mb-0"></hr>
+        <div className="highlight mb-0">
+          <p>
+            This hook is used to prevent a callback function from being
+            recreated every time the component re-renders. By using useCallback,
+            you can ensure that the same function is passed down to a child
+            component, which can help to avoid unnecessary re-renders.
+          </p>
+          <ul>
+            <li>useCallback This can improve Performance.!</li>
+          </ul>
+        </div>
+      </div>
       <Child valueOne={valueOne} fun={fun} />
 
       <button

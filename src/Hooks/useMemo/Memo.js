@@ -23,25 +23,48 @@ const UMemo = () => {
     return value % 2 === 0;
   }, [value]);
   return (
-    <div className="my-4">
-      <p>This is {isEven ? 'Even Number' : 'Odd Number'}</p>
-      <div className="btn-group" role="group" aria-label="Basic example">
-        <button
-          type="button"
-          className="btn btn-outline-primary"
-          onClick={handlerUpdate}
-        >
-          increase {value}
-        </button>
-        <button
-          type="button"
-          className="btn btn-outline-danger"
-          onClick={handlerUpdateTwo}
-        >
-          Dicrease {valueTwo}
-        </button>
+    <>
+      <div>
+        <hr></hr>
+
+        <h4 className="alert-heading">
+          <i>
+            UseMemo <i class="fa-solid fa-anchor"></i> Example
+          </i>
+        </h4>
+        <hr class="mb-0"></hr>
+        <div className="highlight mb-0">
+          <p>
+          This hook is used to calculate and store a value that is derived from
+          other values. It is similar to useEffect, but it only runs when one of
+          the dependencies changes. Use this hook when you have some expensive
+          computation, you only want to compute it when some values changed.
+          </p>
+          <ul>
+            <li>useCallback This can improve Performance.!</li>
+          </ul>
+        </div>
       </div>
-    </div>
+      <div className="my-4">
+        <p>This is {isEven ? 'Even Number' : 'Odd Number'}</p>
+        <div className="btn-group" role="group" aria-label="Basic example">
+          <button
+            type="button"
+            className="btn btn-outline-primary"
+            onClick={handlerUpdate}
+          >
+            increase {value}
+          </button>
+          <button
+            type="button"
+            className="btn btn-outline-danger"
+            onClick={handlerUpdateTwo}
+          >
+            Dicrease {valueTwo}
+          </button>
+        </div>
+      </div>
+    </>
   );
 };
 export default UMemo;

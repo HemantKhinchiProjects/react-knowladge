@@ -3,7 +3,10 @@ import React from 'react';
 import State from './useState/State.js';
 import Ref from './useRef/Ref.js';
 import Reducer from './useReducer/Reducer.js';
+import CustomHooks from './customHooks/custom.js';
 import Effect from './useEffect/Effect.js';
+import Callback from './useCallback/Callback.js';
+import UMemo from './useMemo/Memo.js';
 const Hooks = () => {
   return (
     <>
@@ -28,7 +31,17 @@ const Hooks = () => {
       <State />
       <Ref />
       <Reducer />
+      <CustomHooks />
       <Effect />
+      <div className="alert alert-warning mt-4" role="alert">
+        Summary: useCallback is used to memoize callback functions, so that the
+        same function is passed down to child components, avoiding unnecessary
+        re-renders. useMemo is used to memoize the computation of expensive
+        values, only recalculating them when the dependencies change, which
+        leads to more efficient performance.
+      </div>
+      <Callback />
+      <UMemo />
     </>
   );
 };
