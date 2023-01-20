@@ -8,9 +8,15 @@ import Reducer from './Hooks/useReducer/Reducer.js';
 import State from './Hooks/useState/State.js';
 import Effect from './Hooks/useEffect/Effect.js';
 import CustomHooks from './Hooks/customHooks/custom.js';
+//High Order Function
+import HocSample from './components/HOC/hocSample.js';
+
 const App = () => {
   return (
     <div className="container">
+      {/* HOC sample */}
+      <HocSample />
+      <br />
       <h1>React Hooks</h1>
       <p>
         Hooks were added to React in version 16.8. Hooks allow function
