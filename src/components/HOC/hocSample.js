@@ -5,7 +5,9 @@ const HocSample = () => {
   return (
     <>
       <div className="bd-callout bd-callout-info mb-0">
-        <h4>React HOC sample</h4>
+        <h4>
+          React HOC sample <i class="fa-solid fa-hammer"></i>
+        </h4>
       </div>
       <div className="highlight mb-0">
         <i>
@@ -17,7 +19,8 @@ const HocSample = () => {
         </i>
       </div>
       <hr></hr>
-      <i>Example</i>
+      <i>HOC Example </i>
+      <i class="fa-solid fa-hammer"></i>
       <PersonOne />
       <PersonTwo />
       <hr></hr>

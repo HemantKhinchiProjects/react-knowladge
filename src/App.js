@@ -1,11 +1,12 @@
 import React, { memo } from 'react';
 import './style.css';
 /*Hooks Example*/
+import Hooks from './Hooks/hooks.js';
 import UMemo from './Hooks/useMemo/Memo.js';
 import Callback from './Hooks/useCallback/Callback.js';
-import Ref from './Hooks/useRef/Ref.js';
+
 import Reducer from './Hooks/useReducer/Reducer.js';
-import State from './Hooks/useState/State.js';
+
 import Effect from './Hooks/useEffect/Effect.js';
 import CustomHooks from './Hooks/customHooks/custom.js';
 //High Order Function
@@ -17,16 +18,8 @@ const App = () => {
       {/* HOC sample */}
       <HocSample />
       <br />
-      <h1>React Hooks</h1>
-      <p>
-        Hooks were added to React in version 16.8. Hooks allow function
-        components to have access to state and other React features. Because of
-        this, class components are generally no longer needed. :)
-      </p>
-      <p className="alert alert-warning">
-        Although Hooks generally replace class components, there are no plans to
-        remove classes from React.
-      </p>
+      {/* Hooks Sample */}
+      <Hooks />
       <div className="alert alert-primary" role="alert">
         Summary: useCallback is used to memoize callback functions, so that the
         same function is passed down to child components, avoiding unnecessary
@@ -56,11 +49,7 @@ const App = () => {
         </p>
       </div>
       <Callback />
-      <div className="alert alert-success" role="alert">
-        <h4 className="alert-heading">useRef Hooks!</h4>
-        <p>...</p>
-      </div>
-      <Ref />
+     
       <div className="alert alert-success" role="alert">
         <h4 className="alert-heading">useReducer Hooks!</h4>
         <p>
@@ -69,16 +58,8 @@ const App = () => {
         </p>
       </div>
       <Reducer />
-      <div className="alert alert-success my-4" role="alert">
-        <h4 className="alert-heading">useState Hooks!</h4>
-        <p>
-          useState is a Hook that allows you to have state variables in
-          functional components. You pass the initial state to this function and
-          it returns a variable with the current state value (not necessarily
-          the initial state) and another function to update this value.
-        </p>
-      </div>
-      <State />
+      
+     
       <div className="alert alert-success my-4" role="alert">
         <h4 className="alert-heading">useEffect Hooks! most widly used</h4>
         <p>

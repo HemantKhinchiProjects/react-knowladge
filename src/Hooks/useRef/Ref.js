@@ -9,22 +9,31 @@ const Ref = () => {
     yname == '' ? alert('Please Fill the data') : setShow(true);
   };
   return (
-    <div className="my-2 alert alert-dark ">
-      <form className="col-4 mx-auto" onSubmit={handlerSubmit}>
-        <div className="mb-3">
-          <label htmlFor="luckyName" className="form-label">
-            Enter your lucky name
-          </label>
-          <input
-            type="text"
-            className="form-control"
-            id="luckyName"
-            ref={luckyName}
-          />
-        </div>
-        <button className="btn btn-primary">Submit</button>
-      </form>
-      <small>{show ? `Your name is ${luckyName.current.value}` : show} </small>
+    <div>
+      <div className="alert alert-success" role="alert">
+        <h4 className="alert-heading">useRef Hooks!</h4>
+        <p>...</p>
+      </div>
+
+      <div className="my-2 alert alert-dark ">
+        <form className="col-4 mx-auto" onSubmit={handlerSubmit}>
+          <div className="mb-3">
+            <label htmlFor="luckyName" className="form-label">
+              Enter your lucky name
+            </label>
+            <input
+              type="text"
+              className="form-control"
+              id="luckyName"
+              ref={luckyName}
+            />
+          </div>
+          <button className="btn btn-primary">Submit</button>
+        </form>
+        <small>
+          {show ? `Your name is ${luckyName.current.value}` : show}{' '}
+        </small>
+      </div>
     </div>
   );
 };
