@@ -2,8 +2,8 @@ import React, { memo } from 'react';
 import './style.css';
 /*Hooks Example*/
 import Hooks from './Hooks/hooks.js';
-
-
+//Map example
+import Map from './components/map/Map';
 
 //High Order Function
 import HocSample from './components/HOC/hocSample.js';
@@ -16,6 +16,8 @@ const App = () => {
       <br />
       {/* Hooks Sample */}
       <Hooks />
+      {/* map Example and featch example */}
+      <Map />
     </div>
   );
 };
