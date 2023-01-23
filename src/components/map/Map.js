@@ -21,23 +21,24 @@ const Map = () => {
   }, []);
   return (
     <>
-      Map
+    Map Example
       {users.map((people) => {
         const { id, name, username, email, address, website, phone, company } =
           people;
-        <div classname="card" style={{ width: '18rem' }}>
-          // <img src="..." classname="card-img-top" alt="..." />
-          <div classname="card-body">
-            <h5 classname="card-title">{name}</h5>
-            <p classname="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" classname="btn btn-primary">
-              Go somewhere
-            </a>
+        return (
+          <div classname="card" style={{ width: '18rem' }}>
+            {/* <img src="..." classname="card-img-top" alt="..." /> */}
+            <div classname="card-body" key={id}>
+              <h5 classname="card-title">{name}</h5>
+              <p classname="card-text">
+               {username}
+              </p>
+              <a href="#" classname="btn btn-primary">
+                {phone}
+              </a>
+            </div>
           </div>
-        </div>;
+        );
       })}
     </>
   );
