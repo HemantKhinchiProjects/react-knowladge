@@ -8,16 +8,16 @@ const Map = () => {
       const response = await fetch(userList);
       const users = await response.json();
       setUsers(users);
-      console.log(users);
+      //console.log(users);
     } catch {
       (error) => {
-        console.log(error);
+        //console.log(error);
       };
     }
   };
   useEffect(() => {
     featchData();
-    console.log('Hemant');
+    //console.log('Hemant');
   }, []);
   return (
     <>
