@@ -9,12 +9,12 @@ import Map from './components/map/Map';
 import HocSample from './components/HOC/hocSample.js';
 
 //import context API file
-import NoteState from './context/note/noteState.js';
+//import NoteState from './context/note/noteState.js';
 
 const App = () => {
   return (
     <>
-      <NoteState>
+      <>
         <div className="container">
           {/* HOC sample */}
           <HocSample />
@@ -24,7 +24,7 @@ const App = () => {
           {/* map Example and featch example */}
           <Map />
         </div>
-      </NoteState>
+      </>
     </>
   );
 };
