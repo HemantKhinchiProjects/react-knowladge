@@ -5,6 +5,6 @@ const NoteState = (props) => {
     name: 'Hemant',
     class: 'A1',
   };
-  return <Context.provider value={state}>{props.children}</Context.provider>;
+  return <Context.Provider value={state}>{props.children}</Context.Provider>;
 };
 export default NoteState;
