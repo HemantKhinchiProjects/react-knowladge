@@ -1,3 +1,3 @@
-import React, { crateContext } from 'react';
-const Context = crateContext();
+import React, { createContext } from 'react';
+const Context = createContext();
 export default Context;
