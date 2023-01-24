@@ -29,10 +29,10 @@ const UMemo = () => {
 
         <h4 className="alert-heading">
           <i>
-            UseMemo <i class="fa-solid fa-anchor"></i> Example
+            UseMemo <i className="fa-solid fa-anchor"></i> Example
           </i>
         </h4>
-        <hr class="mb-0"></hr>
+        <hr className="mb-0"></hr>
         <div className="highlight mb-0">
           <p>
           This hook is used to calculate and store a value that is derived from

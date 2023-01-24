@@ -18,10 +18,10 @@ const Reducer = () => {
 
         <h4 className="alert-heading">
           <i>
-            UseReducer <i class="fa-solid fa-anchor"></i> Example
+            UseReducer <i className="fa-solid fa-anchor"></i> Example
           </i>
         </h4>
-        <hr class="mb-0"></hr>
+        <hr className="mb-0"></hr>
         <div className="highlight mb-0">
           <p>
             when we work with multipal state, we need to use UseReduce instad of

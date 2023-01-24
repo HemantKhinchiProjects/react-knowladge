@@ -14,7 +14,7 @@ const Hooks = () => {
       {/* <HooksTitle /> */}
       <div className="bd-callout bd-callout-info mb-0">
         <h4>
-          React Hooks <i class="fa-solid fa-anchor"></i>
+          React Hooks <i className="fa-solid fa-anchor"></i>
         </h4>
       </div>
       <div className="highlight mb-0">

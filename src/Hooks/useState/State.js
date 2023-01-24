@@ -14,10 +14,10 @@ const State = () => {
 
         <h4 className="alert-heading">
           <i>
-            UseState <i class="fa-solid fa-anchor"></i> Example
+            UseState <i className="fa-solid fa-anchor"></i> Example
           </i>
         </h4>
-        <hr class="mb-0"></hr>
+        <hr className="mb-0"></hr>
         <div className="highlight mb-0">
           <p>
             useState is a Hook that allows you to have state variables in

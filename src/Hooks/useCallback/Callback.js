@@ -17,10 +17,10 @@ const Callback = () => {
 
         <h4 className="alert-heading">
           <i>
-            UseCallback <i class="fa-solid fa-anchor"></i> Example
+            UseCallback <i className="fa-solid fa-anchor"></i> Example
           </i>
         </h4>
-        <hr class="mb-0"></hr>
+        <hr className="mb-0"></hr>
         <div className="highlight mb-0">
           <p>
             This hook is used to prevent a callback function from being

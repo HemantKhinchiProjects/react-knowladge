@@ -25,10 +25,10 @@ const Map = () => {
         <hr></hr>
         <h4 className="alert-heading">
           <i>
-            Map <i class="fa-solid fa-code-branch"></i> Example
+            Map <i className="fa-solid fa-code-branch"></i> Example
           </i>
         </h4>
-        <hr class="mb-0"></hr>
+        <hr className="mb-0"></hr>
         <div className="highlight mb-0">
           <p></p>
           <ul>

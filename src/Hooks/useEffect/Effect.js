@@ -14,10 +14,10 @@ const Effect = () => {
 
         <h4 className="alert-heading">
           <i>
-            UseEffect <i class="fa-solid fa-anchor"></i> Example
+            UseEffect <i className="fa-solid fa-anchor"></i> Example
           </i>
         </h4>
-        <hr class="mb-0"></hr>
+        <hr className="mb-0"></hr>
         <div className="highlight mb-0">
           <p>useEffect Hooks! most widly used :-)</p>
           <p>

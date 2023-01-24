@@ -15,10 +15,10 @@ const Ref = () => {
 
         <h4 className="alert-heading">
           <i>
-            UseRef <i class="fa-solid fa-anchor"></i> Example
+            UseRef <i className="fa-solid fa-anchor"></i> Example
           </i>
         </h4>
-        <hr class="mb-0"></hr>
+        <hr className="mb-0"></hr>
         <div className="highlight mb-0">
           <p>
             If we tried to count how many times our application renders using

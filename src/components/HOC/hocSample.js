@@ -6,7 +6,7 @@ const HocSample = () => {
     <>
       <div className="bd-callout bd-callout-info mb-0">
         <h4>
-          React HOC sample <i class="fa-solid fa-hammer"></i>
+          React HOC sample <i className="fa-solid fa-hammer"></i>
         </h4>
       </div>
       <div className="highlight mb-0">
@@ -20,7 +20,7 @@ const HocSample = () => {
       </div>
       <hr></hr>
       <i>HOC Example </i>
-      <i class="fa-solid fa-hammer"></i>
+      <i className="fa-solid fa-hammer"></i>
       <PersonOne />
       <PersonTwo />
       <hr></hr>
