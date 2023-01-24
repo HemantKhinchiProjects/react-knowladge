@@ -21,25 +21,47 @@ const Map = () => {
   }, []);
   return (
     <>
-    Map Example
-      {users.map((people) => {
-        const { id, name, username, email, address, website, phone, company } =
-          people;
-        return (
-          <div classname="card" style={{ width: '18rem' }}>
-            {/* <img src="..." classname="card-img-top" alt="..." /> */}
-            <div classname="card-body" key={id}>
-              <h5 classname="card-title">{name}</h5>
-              <p classname="card-text">
-               {username}
-              </p>
-              <a href="#" classname="btn btn-primary">
-                {phone}
-              </a>
+      <div>
+        <hr></hr>
+        <h4 className="alert-heading">
+          <i>
+            Map <i class="fa-solid fa-code-branch"></i> Example
+          </i>
+        </h4>
+        <hr class="mb-0"></hr>
+        <div className="highlight mb-0">
+          <p></p>
+          <ul>
+            <li> </li>
+          </ul>
+        </div>
+      </div>
+      <div classname="card d-flex">
+        {users.map((people) => {
+          const {
+            id,
+            name,
+            username,
+            email,
+            address,
+            website,
+            phone,
+            company,
+          } = people;
+          return (
+            <div className="col-4">
+              {/* <img src="..." classname="card-img-top" alt="..." /> */}
+              <div classname="card-body" key={id}>
+                <h5 classname="card-title">{name}</h5>
+                <p classname="card-text">{username}</p>
+                <a href="#" classname="btn btn-primary">
+                  {phone}
+                </a>
+              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </>
   );
 };
