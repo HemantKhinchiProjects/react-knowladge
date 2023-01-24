@@ -36,7 +36,7 @@ const Map = () => {
           </ul>
         </div>
       </div>
-      <div classname="card d-flex">
+      <div className="card d-flex">
         {users.map((people) => {
           const {
             id,
@@ -50,11 +50,11 @@ const Map = () => {
           } = people;
           return (
             <div className="col-4">
-              {/* <img src="..." classname="card-img-top" alt="..." /> */}
-              <div classname="card-body" key={id}>
-                <h5 classname="card-title">{name}</h5>
-                <p classname="card-text">{username}</p>
-                <a href="#" classname="btn btn-primary">
+              {/* <img src="..." className="card-img-top" alt="..." /> */}
+              <div className="card-body" key={id}>
+                <h5 className="card-title">{name}</h5>
+                <p className="card-text">{username}</p>
+                <a href="#" className="btn btn-primary">
                   {phone}
                 </a>
               </div>

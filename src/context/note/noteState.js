@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Context from './context';
 const NoteState = (props) => {
-  const state = {
+  const s1 = {
     name: 'Hemant',
     class: 'A1',
   };
-  return <Context.Provider value={state}>{props.children}</Context.Provider>;
+  const [state, setState] = useState(s1);
+  const handlerUpdate = () => {
+    setTimeout(() => {
+      setState({
+        name: 'Hemant Khinchi',
+        class: 'A 001',
+      });
+    }, 2000);
+  };
+  return (
+    <Context.Provider value={{ state, handlerUpdate }}>
+      {props.children}
+    </Context.Provider>
+  );
 };
 export default NoteState;

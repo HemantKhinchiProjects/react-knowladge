@@ -1,7 +1,10 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import Context from '../../context/note/context.js';
 const NoteAccess = () => {
   const a = useContext(Context);
+  useEffect(() => {
+    a.handlerUpdate();
+  }, []);
   return (
     <>
       <div>
@@ -20,11 +23,15 @@ const NoteAccess = () => {
         </div>
       </div>
       This is the import name from context API
-      <strong> {a.name}</strong>
+      <strong>
+        {' '}
+        {a.state.name} {a.state.class}
+      </strong>
       <ul>
         <li>First create context file</li>
         <li>create another file where we can import context file</li>
         <li>make "fileName".Provider </li>
+        <li>We send data from Provider by Value={}</li>
         <li>
           Create children so other componet will be display without problem
         </li>
