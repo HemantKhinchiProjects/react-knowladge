@@ -10,7 +10,7 @@ import HocSample from './components/HOC/hocSample.js';
 
 //import context API file
 import NoteState from './context/note/noteState.js';
-
+import NoteAccess from './components/noteAccess/noteAccess.js';
 const App = () => {
   return (
     <>
@@ -23,6 +23,8 @@ const App = () => {
           <Hooks />
           {/* map Example and featch example */}
           <Map />
+          {/* ContextAPI  Example  */}
+          <NoteAccess />
         </div>
       </NoteState>
     </>
